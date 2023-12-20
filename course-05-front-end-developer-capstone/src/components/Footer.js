@@ -2,10 +2,10 @@ import logo from '../images/Logo_18@4x.png';
 
 function Footer() {
     return (
-        <footer>
-            <ul>
+        <footer className="footer">
+            <ul className="footer-items">
                 <li>
-                    <img src={logo}/>
+                    <img className="footer-logo" src={logo}/>
                 </li>
                 <li>
                     <div>Navigation</div>

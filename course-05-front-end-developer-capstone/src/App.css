@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 } */
+
+
+li {
+  list-style: none;
+}
+
+.app {
+  padding: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.header-logo {
+  width: 50%;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.nav-items {
+  display: flex;
+}
+
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer-logo {
+  width: 25%;
+}
+
+.footer-items {
+  display: flex;
+}
