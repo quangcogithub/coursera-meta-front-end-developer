@@ -52,18 +52,28 @@ li {
     "header nav nav"
     "main main main"
     "footer footer footer";
+    display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 10px;
 }
 
+
+/* Header */
 .header {
   grid-area: header;
+  grid-column: 3 / span 2;
 }
 
 .header-logo {
-  width: 50%;
+  width: 70%;
 }
 
+
+/* Nav */
 .nav {
   grid-area: nav;
+  grid-column: 6 / span 5;
 }
 
 .nav-items {
@@ -71,12 +81,17 @@ li {
 }
 
 
+/* Main */
 .main {
   grid-area: main;
+  grid-column: 3 / span 8;
 }
 
+
+/* Footer */
 .footer {
   grid-area: footer;
+  grid-column: 3 / span 8;
 }
 
 .footer-logo {
