@@ -53,7 +53,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* <section className='testimonials'>
+            <section className='testimonials'>
                 <div>
                     <h2>Testimonials</h2>
                 </div>
@@ -91,7 +91,7 @@ function Home() {
                         <p>Good</p>
                     </article>
                 </div>
-            </section> */}
+            </section>
         </>
     )
 }
