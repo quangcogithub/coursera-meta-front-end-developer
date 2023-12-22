@@ -1,15 +1,15 @@
-import logo from '../images/Logo_16@4x.png';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
         <nav className="nav">
             <ul className="nav-items">
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Reservations</li>
-                <li>Oder Online</li>
-                <li>Login</li>
+                <li><Link className='nav-item' to="/">Home</Link></li>
+                <li><Link className='nav-item' to="/about">About</Link></li>
+                <li><Link className='nav-item' to="/menu">Menu</Link></li>
+                <li><Link className='nav-item' to="/booking">Booking</Link></li>
+                <li><Link className='nav-item' to="/oder">Oder Online</Link></li>
+                <li><Link className='nav-item' to="/login">Login</Link></li>
             </ul>
         </nav>
     )
