@@ -1,9 +1,11 @@
 import React from "react";
+import confirmed from '../images/confirm.svg';
 
 function Confirmed() {
     return (
         <div className="confirmed">
-            <h2>Booking has been <span>confirmed!</span></h2>
+            <img className="confirmed-icon" src={confirmed}/>
+            <h2 className="confirmed-content">Booking has been <span>confirmed</span></h2>
         </div>
     )
 }

@@ -35,65 +35,72 @@ function Booking({fields, dispatch, submit, state}) {
     }
 
     return (
-        <form style={{display: 'grid', gap: '20px'}} onSubmit={handleSubmit}>
-            <div className="form-group">
-                <label className="form-label" htmlFor="res-date">Choose date</label>
-                <input
-                    type="date"
-                    id="res-date"
-                    value={date}
-                    onChange={(e) => handleChange('date', e.target.value)}
-                />
-                <span className="form-message"></span>
-            </div>
-            <div className="form-group">
-                <label className="form-label" htmlFor="res-time">Choose time</label>
-                <select
-                    id="res-time"
-                    value={time}
-                    onChange={(e) => handleChange('time', e.target.value)}
-                >
-                    {
-                        fields['times'].map(available => (
-                            <option key={available}>{available}</option>
-                        ))
-                    }
-                </select>
-                <span className="form-message"></span>
-            </div>
-            <div className="form-group">
-                <label className="form-label" htmlFor="guests">Number of guests</label>
-                <input
-                    type="number"
-                    placeholder="1"
-                    min="1"
-                    max="10"
-                    id="guests"
-                    value={guest}
-                    onChange={(e) => handleChange('guests', e.target.value)}
-                />
-                <span className="form-message"></span>
-            </div>
-            <div className="form-group">
-                <label className="form-label" htmlFor="occasion">Occasion</label>
-                <select
-                    id="occasion"
-                    value={occasion}
-                    onChange={(e) => handleChange('occasion', e.target.value)}
-                >
-                    <option>Birthday</option>
-                    <option>Anniversary</option>
-                </select>
-                <span className="form-message"></span>
-            </div>
-            <div>
-                <input
-                    disabled={!date}
-                    type="submit"
-                    value="Make your reservation"
-                />
-            </div>
-        </form>
+        <section>
+            <form className="booking-form" style={{display: 'grid', gap: '20px'}} onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label className="form-label" htmlFor="res-date">Choose date</label>
+                    <input
+                        type="date"
+                        id="res-date"
+                        value={date}
+                        className="form-input"
+                        onChange={(e) => handleChange('date', e.target.value)}
+                    />
+                    <span className="form-message"></span>
+                </div>
+                <div className="form-group">
+                    <label className="form-label" htmlFor="res-time">Choose time</label>
+                    <select
+                        id="res-time"
+                        value={time}
+                        className="form-input"
+                        onChange={(e) => handleChange('time', e.target.value)}
+                    >
+                        {
+                            fields['times'].map(available => (
+                                <option key={available}>{available}</option>
+                            ))
+                        }
+                    </select>
+                    <span className="form-message"></span>
+                </div>
+                <div className="form-group">
+                    <label className="form-label" htmlFor="guests">Number of guests</label>
+                    <input
+                        type="number"
+                        placeholder="1"
+                        min="1"
+                        max="10"
+                        id="guests"
+                        className="form-input"
+                        value={guest}
+                        onChange={(e) => handleChange('guests', e.target.value)}
+                    />
+                    <span className="form-message"></span>
+                </div>
+                <div className="form-group">
+                    <label className="form-label" htmlFor="occasion">Occasion</label>
+                    <select
+                        id="occasion"
+                        value={occasion}
+                        className="form-input"
+                        onChange={(e) => handleChange('occasion', e.target.value)}
+                    >
+                        <option>Birthday</option>
+                        <option>Anniversary</option>
+                    </select>
+                    <span className="form-message"></span>
+                </div>
+                <div>
+                    <input
+                        disabled={!date}
+                        type="submit"
+                        className="submit-button"
+                        value="Make your reservation"
+                    />
+                </div>
+            </form>
+        </section>
     )
 }
 

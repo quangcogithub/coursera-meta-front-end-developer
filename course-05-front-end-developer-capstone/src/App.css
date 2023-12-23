@@ -70,8 +70,10 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
+  margin: 70px auto;
 }
 
+/* Home */
 .section-hero {
   background-color: #495e57;
 }
@@ -103,6 +105,7 @@ section {
   height: 40px;
   width: 135px;
   align-self: flex-end;
+  margin: 10px auto;
 }
 
 .hero-avatar {
@@ -116,7 +119,6 @@ section {
   width: 90%;
   margin: 20px 0px 20px 0px;
 }
-
 
 .highlight {
   grid-column: 3 / span 8;
@@ -157,21 +159,239 @@ section {
 
 .highlight-dish {
   flex-basis: 32%;
+  background-color: #d9d9d9;
 }
 
 .dish-desc {
   height: 200px;
+  margin: auto 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dish-head {
   display: flex;
   justify-content: space-between;
+  margin: auto 10px;
 }
 
 .dish-price {
   color: orange;
   font-style: italic;
   margin-right: 20px;
+}
+
+.dish-delivery {
+  margin: 20px 10px;
+}
+
+.section-testimonials {
+  background-color: #d9d9d9;
+}
+
+.testimonials {
+  grid-column: 3 / span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto auto;
+  margin: 70px 0px;
+}
+
+.testimonial-title {
+  grid-column: 1 / span 8;
+  grid-row: 1 / span 1;
+}
+
+.testimonial-ratings {
+  grid-column: 1 / span 8;
+  grid-row: 2 / span 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial-rating {
+  background-color: white;
+  flex-basis: 24%;
+}
+
+.testimonial-rating h3 {
+  margin: 10px 5px;
+}
+
+.testimonial-rating div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+
+.user-comment {
+  margin: 10px 5px;
+}
+
+.user-image {
+  flex-basis: 45%;
+  height: 100%;
+}
+
+.user-name {
+  flex-basis: 45%;
+  margin: auto auto;
+}
+
+.about {
+  grid-column: 3 / span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  margin: auto 0px;
+}
+
+.about-desc {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+  color: black;
+}
+
+.about-desc h2 {
+  color: #495e57;
+  display: flex;
+}
+
+.about-avatar {
+  grid-column: 5 / span 4;
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-avatar img {
+  width: 90%;
+  margin: 20px 0px 20px 0px;
+}
+
+/* Booking */
+.booking-form {
+  grid-column: 3 / span 8;
+  margin: 0px 0px 70px 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.form-label {
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+.form-input {
+  height: 40px;
+}
+
+.submit-button {
+  color: black;
+  background-color: #f4ce14;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 155px;
+  margin: auto 0px;
+}
+
+
+/* About */
+.about-page {
+  grid-column: 3 / span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto auto;
+  margin: auto 0px;
+}
+
+.about-page-desc {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+  color: black;
+}
+
+.about-page-desc h2 {
+  color: #495e57;
+  display: flex;
+}
+
+.about-page-avatar {
+  grid-column: 1 / span 8;
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-page-avatar img {
+  width: 100%;
+}
+
+
+/* Menu */
+.menu-page {
+  grid-column: 3 / span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto auto;
+  margin: auto 0px;
+}
+
+.menu-page-dishes {
+  grid-column: 1 / span 8;
+  grid-row: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-page-dish {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+
+.menu-page-dish div {
+  flex-basis: 45%;
+  margin: auto 0px;
+  padding: 10px 0px;
+}
+
+.menu-page-dish img {
+  width: 100%;
+}
+
+
+/* Confirmed */
+.confirmed {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto;
+  margin: 70px auto;
+}
+
+.confirmed-icon {
+  grid-column: 6 / span 2;
+  grid-row: 1 / span 1;
+  width: 100%;
+}
+
+.confirmed-content {
+  grid-column: 4 / span 6;
+  grid-row: 2 / span 1;
+  text-align: center;
+}
+
+
+/* Login */
+.login-form {
+  grid-column: 5 / span 4;
+  margin: 0px 0px 70px 0px;
 }
 
 
